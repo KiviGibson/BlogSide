@@ -1,0 +1,167 @@
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+/* 
+    font-family: 'Poiret One', cursive; 
+    font-family: 'Unica One', cursive;
+*/
+:root{
+    --black: rgb(14, 14, 14);
+    --lighter: rgb(36, 36, 36);
+    --color: rgb(66 9 197);/*4209C5*/
+    --font: #ffffff;
+}
+body{
+    background-color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+#nav{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 15;
+    filter: drop-shadow(0 0 0.75rem rgb(7, 0, 27));
+}
+#hero{
+    margin-top: 1;
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(rgb(34, 34, 34),rgb(14, 14, 14));
+    user-select: none;
+}
+#hero h1{
+    font-size: 5em;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#hero h1:hover .reversed{
+    color: var(--color);
+}
+#hero h1:hover b{
+    color: var(--font);
+}
+#hero h2{
+    font-size: 3em;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+#hero div.something{
+    width: 30vw;
+    height: 60vh;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: var(--lighter);
+}
+#first-midsection-wave{
+    width: 100%;
+    aspect-ratio: 9;
+    filter: drop-shadow(0 -0.3rem 0.1rem rgb(7, 0, 27));
+}
+#first-text-section{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%,0) rotate(10deg);
+    width: 50%;
+    height: 30%;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 30px;
+    border: 10px var(--black);
+    border-style: dashed;
+    vertical-align: middle;
+}
+#second-text-section{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,0) rotate(-10deg);
+    width: 50%;
+    height: 30%;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 30px;
+    border: 10px var(--black);
+    border-style: dashed;
+    vertical-align: middle;
+}
+#Magic-Button{
+    width: 20%;
+    height: 10%;
+    background-color: #00000000;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    border-radius: 30px;
+    border: 10px var(--font) dashed;
+    transform: rotate(-10deg);
+    font-size: 2em;
+    vertical-align: middle;
+    cursor:pointer;
+}
+#second-midsection-wave{
+    width: 100%;
+    aspect-ratio: 9;
+    filter: drop-shadow(0 0.3rem 0.1rem rgb(7, 0, 27));
+}
+.text{
+    color: var(--font);
+    font-family: 'Unica One', cursive;
+    z-index: 2;
+}
+#BlogPlace{
+    width: 100%;
+    height: 70vh;
+}
+#footer{
+    width: 100%;
+    height: 20px;
+    background-color: var(--lighter);
+}
+.textB{
+    color:var(--black);
+    font-family: 'Unica One', cursive;
+    z-index: 2;
+}
+.text b{
+    color: var(--color);
+    transition: 400ms;
+}
+.text .reversed{
+    color: var(--font);
+}
+.subtext{
+    color: var(--font);
+    font-family: 'Poiret One', cursive; 
+    z-index: 2;
+}
+.color-section{
+    background-color: var(--color);
+    width: 100%;
+    height: 90vh;
+    z-index: 10;
+    position: relative;
+}
+
+.firstwave{
+    background: url("./wave-haikei\ \(3\).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secondwave{
+    background: url("./wave-haikei\ \(4\).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thridwave{
+    background: url("./wave-haikei\ \(5\).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
