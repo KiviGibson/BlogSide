@@ -12,6 +12,9 @@
     --color: rgb(66 9 197);/*4209C5*/
     --font: #ffffff;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--black);
     padding: 0;
@@ -92,6 +95,13 @@ body{
     border-style: dashed;
     vertical-align: middle;
 }
+.hoveron{
+    transition: 100ms;
+}
+.hoveron:hover{
+    width: 50.5% !important;
+    height: 30.5% !important;
+}
 #Magic-Button{
     width: 20%;
     height: 10%;
@@ -105,25 +115,84 @@ body{
     font-size: 2em;
     vertical-align: middle;
     cursor:pointer;
+    transition: 100ms;
+}
+#Magic-Button:hover{
+    color: var(--lighter);
+    border-color: var(--lighter);
+}
+#Magic-Button:focus{
+    color: var(--black);
+    border-color: var(--black);
 }
 #second-midsection-wave{
     width: 100%;
     aspect-ratio: 9;
     filter: drop-shadow(0 0.3rem 0.1rem rgb(7, 0, 27));
 }
-.text{
-    color: var(--font);
-    font-family: 'Unica One', cursive;
-    z-index: 2;
-}
 #BlogPlace{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
 }
 #footer{
     width: 100%;
     height: 20px;
     background-color: var(--lighter);
+}
+.text{
+    color: var(--font);
+    font-family: 'Unica One', cursive;
+    z-index: 2;
+}
+.to-blog{
+    background-color: var(--color);
+    border: 1px solid var(--lighter);
+    border-radius: 50%;
+    width: 10vw;
+    aspect-ratio: 1;
+    color: var(--font);
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0) rotate(90deg);
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0.2em 0.0em 0.5rem rgb(7, 0, 27));
+    transition: 100ms;
+}
+.to-blog:hover{
+    background-color: rgb(34, 6, 100);
+    border: var(--black);
+}
+.project{
+    background-color: var(--lighter);
+    width:30%;
+    height: 50vh;
+    position: relative;
+    border-radius: 50px 20px;
+    transition: 100ms;
+}
+.project:hover{
+    height: 52.5vh;
+    width: 35%;
+}
+.tytul{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+.tytul::first-letter{
+    font-size: 1.5em;
 }
 .textB{
     color:var(--black);
@@ -162,6 +231,11 @@ body{
 }
 .thridwave{
     background: url("./wave-haikei\ \(5\).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourthwave{
+    background: url("./wave-haikei\ \(6\).svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
